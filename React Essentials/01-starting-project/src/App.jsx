@@ -2,9 +2,11 @@ import {CORE_CONCEPTS} from './data.js'
 import Header from './Components/Header.jsx';
 import CoreComponent from './Components/CoreConcepts.jsx';
 import TabButton from './Components/TabButton.jsx';
+import { useState } from 'react';
 function App() {
+  const [Topic,SetTopic] = useState("Please Select a Topic")
   function HandleSelect(selected){
-    console.log(selected)
+    SetTopic(selected)
 }
   return (
     <div>
@@ -31,7 +33,7 @@ function App() {
   <TabButton onSelect={()=>HandleSelect("State")}>State</TabButton>
 
 </menu>
-Dynamoc Content 
+{Topic}
         </section>
       </main>
     </div>
