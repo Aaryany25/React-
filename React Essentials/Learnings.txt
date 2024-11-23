@@ -1,0 +1,9 @@
+In This Module ,We learned about 
+-Components and how Components works 
+-File Structure Of Components 
+-What is JSX
+- what is Props
+- How to Use Props for Displaying Dynamic Content 
+-What is State 
+-How to use States 
+-Made A Small Application using above Concepts 
