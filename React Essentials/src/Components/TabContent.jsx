@@ -1,31 +1,16 @@
-import { CORE_CONCEPTS} from './data.js'
-import { EXAMPLES } from './data.js';
-import Header from './Components/Header.jsx';
-import CoreComponent from './Components/CoreConcepts.jsx';
-import TabButton from './Components/TabButton.jsx';
+import React from 'react'
+import TabButton from './TabButton.jsx';
+import { EXAMPLES } from '../data.js';
 import { useState } from 'react';
-function App() {
-  const [Topic, SetTopic] = useState()
-  function HandleSelect(selected) {
-    SetTopic(selected)
-  }
+
+function TabContent() {
+    const [Topic, SetTopic] = useState()
+    function HandleSelect(selected) {
+      SetTopic(selected)
+    }
   return (
-    <div>
-      <Header />
-      <main>
-        <section id="core-concepts">
-
-          <h2>Core Concepts</h2>
-          <ul>
-            {CORE_CONCEPTS.map((items,index)=>(
-              <CoreComponent key ={index}{...items}/>
-            ))}
-           
-
-          </ul>
-
-        </section>
-        <section id='examples'>
+    <>
+       <section id='examples'>
           <h2>Examples</h2>
           <menu>
             <TabButton isSelected={Topic ==="components"} onSelect={() => HandleSelect("components")}>Components</TabButton>
@@ -45,9 +30,8 @@ function App() {
           )}
           
         </section>
-      </main>
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default TabContent
