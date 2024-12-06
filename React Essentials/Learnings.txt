@@ -1,9 +1,9 @@
-In This Module ,We learned about 
--Components and how Components works 
--File Structure Of Components 
--What is JSX
-- what is Props
-- How to Use Props for Displaying Dynamic Content 
--What is State 
--How to use States 
--Made A Small Application using above Concepts 
+In This Module, we will be learning about following topics:
+    1. Components in React
+        - Introduction to Components
+        - Working of Components
+        - Storing Components in an Independent Directory (./Components/)
+    2. Understanding the Concept of 'JSX' --> JavaScript XML
+    3. Introduction to Props in React
+        - Working of Props
+        - Using Props to display Dynamic Content
